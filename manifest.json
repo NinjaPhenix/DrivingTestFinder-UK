@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "DrivingTestFinder",
+    "version": "1.0",
+  
+    "description": "Automates the looking for driving tests.",
+  
+    "icons": {
+      "48": "icons/48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.dvsa.gov.uk/*"],
+        "js": ["ab.js"]
+      }
+    ]
+  
+  }
