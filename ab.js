@@ -22,8 +22,6 @@ let datePromise = () =>
         if (chosen == null) { chosen = defaultChoice; }
         let chosenList = chosen.split("-")
         let newDate = "";
-        // This code is actually broken, always get first date on screen cause it doesn't check the state of the date.
-        // Luckily I had 1'st of February
         for (const d of dates) 
         {
             if (d.parentElement.parentElement.classList.contains("BookingCalendar-date--unavailable")) { continue; }
