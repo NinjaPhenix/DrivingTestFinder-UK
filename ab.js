@@ -9,7 +9,7 @@ let divEl = real.document.createElement("div");
 let delayPromise = () => {}
 delayPromise = () =>
 {
-    ab_counter--;
+    ab_counter -= 1000;
     divEl.innerText = "Waiting for " + (ab_counter / 1000);
     if(ab_counter !== 0) { ab_sleep(1000).then(delayPromise); }
 }
